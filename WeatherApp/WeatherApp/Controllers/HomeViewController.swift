@@ -14,7 +14,7 @@ class HomeViewControllers: UIViewController {
     
     var locationManager = CLLocationManager()
     lazy var viewModel = HomeScreenViewModel(networkManager: NetworkManager(),
-                                                     currentWeather: CurrentWeatherModel(),
+                                             currentWeather: CurrentWeatherModel(),
                                                      forecastWeather: ForecastWeatherModel())
     override func viewDidLoad() {
         super.viewDidLoad()
