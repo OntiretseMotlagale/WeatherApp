@@ -24,13 +24,13 @@ extension UserDefaults {
                 UserDefaults.standard.set(data, forKey: Keys.favorites)
             } catch {
                 print("Unable to Encode weather data (\(error))")
+                //MARK: - Make error to the User
             }
         }
     }
     static func addToFavorites(_ weather: CurrentWeatherModel) {
         var currentFavorites = UserDefaults.savedfavorites
         currentFavorites.append(weather)
-        print("saved")
         UserDefaults.savedfavorites = currentFavorites
     }
     static func isFavorite(_ weather: CurrentWeatherModel?) -> Bool {
