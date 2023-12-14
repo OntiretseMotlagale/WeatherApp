@@ -4,10 +4,17 @@ struct CurrentWeatherModel: Codable, Equatable {
     static func == (lhs: CurrentWeatherModel, rhs: CurrentWeatherModel) -> Bool {
         return lhs.name == rhs.name
     }
+    
     var coord: Coordinates?
     var name: String?
     var main: MainData?
     var weather: [WeatherData]?
+    var sys: Sys?
+}
+struct Sys: Codable {
+    let type, id: Int
+    let country: String
+    let sunrise, sunset: Int
 }
 struct WeatherData: Codable {
     var id: Int
@@ -29,3 +36,4 @@ struct Forecast: Codable{
     var main: MainData?
     var weather: [WeatherData]?
 }
+
