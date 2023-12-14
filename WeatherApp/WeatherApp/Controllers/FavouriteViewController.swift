@@ -39,11 +39,15 @@ extension FavouriteViewController: UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FavouritesTableViewCell", for: indexPath) as! FavouritesTableViewCell
-        cell.favouriteWeatherLocation.text = viewModel.favoritesList[indexPath.row].name
+        cell.setup(location: viewModel.favoritesList[indexPath.row].name ?? "",
+                   countryName: viewModel.favoritesList[indexPath.row].sys?.country ?? "")
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedWeatherLocation =  viewModel.favoritesList[indexPath.row]
         delegate?.transitionToHomeScreen(with: selectedWeatherLocation)
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50.0
     }
 }
