@@ -18,7 +18,7 @@
 		26F8F0502B286CD300E7AD99 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F8F04F2B286CD300E7AD99 /* NetworkManager.swift */; };
 		26F8F0582B28775600E7AD99 /* ForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F8F0562B28775600E7AD99 /* ForecastTableViewCell.swift */; };
 		26F8F0592B28775600E7AD99 /* ForecastTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26F8F0572B28775600E7AD99 /* ForecastTableViewCell.xib */; };
-		26F8F05B2B28780200E7AD99 /* HomeScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F8F05A2B28780200E7AD99 /* HomeScreenViewModel.swift */; };
+		26F8F05B2B28780200E7AD99 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F8F05A2B28780200E7AD99 /* HomeViewModel.swift */; };
 		26F8F0622B28923600E7AD99 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F8F0602B28923600E7AD99 /* HomeViewController.swift */; };
 		26F8F0632B28923600E7AD99 /* HomeViewControllers.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26F8F0612B28923600E7AD99 /* HomeViewControllers.xib */; };
 		26F8F06A2B29913000E7AD99 /* FavouritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F8F0692B29913000E7AD99 /* FavouritesViewModel.swift */; };
@@ -55,7 +55,7 @@
 		26F8F04F2B286CD300E7AD99 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		26F8F0562B28775600E7AD99 /* ForecastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastTableViewCell.swift; sourceTree = "<group>"; };
 		26F8F0572B28775600E7AD99 /* ForecastTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForecastTableViewCell.xib; sourceTree = "<group>"; };
-		26F8F05A2B28780200E7AD99 /* HomeScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewModel.swift; sourceTree = "<group>"; };
+		26F8F05A2B28780200E7AD99 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		26F8F0602B28923600E7AD99 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		26F8F0612B28923600E7AD99 /* HomeViewControllers.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewControllers.xib; sourceTree = "<group>"; };
 		26F8F0692B29913000E7AD99 /* FavouritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewModel.swift; sourceTree = "<group>"; };
@@ -172,7 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				26F8F0612B28923600E7AD99 /* HomeViewControllers.xib */,
-				26F8F05A2B28780200E7AD99 /* HomeScreenViewModel.swift */,
+				26F8F05A2B28780200E7AD99 /* HomeViewModel.swift */,
 			);
 			path = "Home Screen";
 			sourceTree = "<group>";
@@ -345,7 +345,7 @@
 				26F8F06A2B29913000E7AD99 /* FavouritesViewModel.swift in Sources */,
 				26F8F0732B2993DF00E7AD99 /* TabBarController.swift in Sources */,
 				26F8F0582B28775600E7AD99 /* ForecastTableViewCell.swift in Sources */,
-				26F8F05B2B28780200E7AD99 /* HomeScreenViewModel.swift in Sources */,
+				26F8F05B2B28780200E7AD99 /* HomeViewModel.swift in Sources */,
 				26F8F07D2B29C4E200E7AD99 /* FavouriteViewController.swift in Sources */,
 				26F8F04E2B286B5500E7AD99 /* ForecastWeatherModel.swift in Sources */,
 				26F8F0622B28923600E7AD99 /* HomeViewController.swift in Sources */,
