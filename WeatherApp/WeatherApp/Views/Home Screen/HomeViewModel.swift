@@ -43,7 +43,7 @@ class HomeScreenViewModel {
         case 701...781:
             return "Sunny"
         case 800:
-            return "clear_icon"
+            return "clear"
         case 801...804:
             return "Cloudy"
         default:
@@ -54,19 +54,19 @@ class HomeScreenViewModel {
     var weatherID: String {
         switch currentWeather.weather?.first?.id ?? 0 {
         case 200...232:
-            return "thunderstorm_icon"
+            return "thunderstorm"
         case 300...321:
-            return "clear_icon"
+            return "clear"
         case 500...531:
-            return "rain_icon"
+            return "rain"
         case 600...622:
-            return "snow_icon"
+            return "snow"
         case 701...781:
-            return "snow_icon"
+            return "snow"
         case 800:
-            return "clear_icon"
+            return "clear"
         case 801...804:
-            return "sunny_icon"
+            return "sunny"
         default:
             return "Default"
         }
@@ -113,7 +113,7 @@ class HomeScreenViewModel {
         if UserDefaults.isFavorite(currentWeather) {
             return UIImage(systemName: "heart.fill")
         }
-        return UIImage(systemName: "heart")
+        return UIImage(systemName: "heart.fill")
     }
     func removeFromFavorites(country: CurrentWeatherModel) {
         UserDefaults.savedfavorites.removeAll(where: { $0.name == country.name })

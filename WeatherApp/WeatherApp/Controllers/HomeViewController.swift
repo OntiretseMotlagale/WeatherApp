@@ -24,18 +24,23 @@ class HomeViewControllers: UIViewController {
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         locationManager.requestLocation()
-        let rightButton = UIBarButtonItem(title: "", style: .plain, target: self, action: #selector(rightButtonTapped))
-        navigationItem.rightBarButtonItem = rightButton
-        rightButton.image = UIImage(systemName: "heart.fill")
+        rightBarButton()
     }
     
-    @objc func rightButtonTapped() {
+    @objc func addFavourite() {
         viewModel.updateFavorites()
     }
     private func setupUI() {
         viewModel.fetchWeather {
             self.updateData()
         }
+    }
+    
+    func rightBarButton() {
+        let rightButton = UIBarButtonItem(title: "", style: .plain, target: self, action: #selector(addFavourite))
+        navigationItem.rightBarButtonItem = rightButton
+        rightButton.image = viewModel.rightBarButtonImage()
+        rightButton.tintColor = .red
     }
     func registerCell() {
         forecastTableView.register(UINib(nibName: "ForecastTableViewCell", bundle: nil), forCellReuseIdentifier: "ForecastTableViewCell")

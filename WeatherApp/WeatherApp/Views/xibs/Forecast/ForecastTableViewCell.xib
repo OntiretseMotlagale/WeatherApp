@@ -27,9 +27,11 @@
                                 <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear_icon" translatesAutoresizingMaskIntoConstraints="NO" id="6BQ-4g-Yl7">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6BQ-4g-Yl7">
                                 <rect key="frame" x="161.66666666666666" y="0.0" width="109.66666666666666" height="55"/>
-                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="12" scale="medium"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="small" weight="thin">
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                </preferredSymbolConfiguration>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CBM-7q-iul">
                                 <rect key="frame" x="323.33333333333331" y="0.0" width="109.66666666666669" height="55"/>
@@ -55,11 +57,11 @@
                 <outlet property="forecastIcon" destination="6BQ-4g-Yl7" id="ROt-zG-kRV"/>
                 <outlet property="forecastTempLabel" destination="CBM-7q-iul" id="CpC-6I-9k2"/>
             </connections>
-            <point key="canvasLocation" x="194.6564885496183" y="23.591549295774648"/>
+            <point key="canvasLocation" x="118" y="9"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="clear_icon" width="13" height="13"/>
+        <image name="clear" width="13" height="13"/>
         <namedColor name="PrimaryColor">
             <color red="0.35899999737739563" green="0.55900001525878906" blue="0.86299997568130493" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>

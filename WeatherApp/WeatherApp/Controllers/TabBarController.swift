@@ -16,8 +16,8 @@ class MainTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTabs()
-        self.tabBar.tintColor = .green
-        self.tabBar.unselectedItemTintColor = .gray
+        self.tabBar.tintColor = .systemPink
+        self.tabBar.unselectedItemTintColor = .darkGray
     }
     private func setupTabs() {
         let home = self.createNav(with: "Home", and: (UIImage(systemName: "house.fill")), viewController: HomeViewControllers())
